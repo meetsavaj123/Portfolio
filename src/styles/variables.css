@@ -1,0 +1,35 @@
+:root {
+
+  /* Colors */
+
+  --bg:#050816;
+  --surface:#111827;
+  --card:#1a2236;
+
+  --primary:#6366F1;
+  --secondary:#8B5CF6;
+
+  --text:#ffffff;
+  --text-light:#b6bdd1;
+
+  --border:rgba(255,255,255,.08);
+
+  --success:#22c55e;
+  --danger:#ef4444;
+
+  /* Radius */
+
+  --radius-sm:10px;
+  --radius-md:18px;
+  --radius-lg:30px;
+
+  /* Shadow */
+
+  --shadow:
+  0 20px 40px rgba(0,0,0,.25);
+
+  /* Container */
+
+  --container:1200px;
+
+}
