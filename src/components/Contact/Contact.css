@@ -1,37 +1,125 @@
 .contact{
-
-text-align:center;
-
+    background:#050816;
+    padding:120px 0;
 }
 
-.contact p{
+.contact-wrapper{
+    max-width:900px;
+    margin:auto;
+    background:#111827;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:30px;
+    padding:60px;
+    text-align:center;
+    box-shadow:0 30px 60px rgba(0,0,0,.35);
+}
 
-margin:30px 0;
+.contact-text{
+    color:#b6bdd1;
+    font-size:18px;
+    line-height:1.8;
+    max-width:700px;
+    margin:25px auto 50px;
+}
 
-color:#b6bdd1;
+.contact-info{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-bottom:50px;
+}
 
+.info-card{
+    background:#0c1222;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:25px;
+    transition:.35s;
+}
+
+.info-card:hover{
+    transform:translateY(-8px);
+    border-color:#6366F1;
+    box-shadow:0 20px 40px rgba(99,102,241,.20);
+}
+
+.icon{
+    font-size:28px;
+    color:#6366F1;
+    margin-bottom:18px;
+}
+
+.info-card h4{
+    color:white;
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+.info-card a,
+.info-card p{
+    color:#b6bdd1;
+    word-break:break-word;
+}
+
+.contact-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
 .contact-btn{
-
-display:inline-block;
-
-padding:18px 45px;
-
-background:#6366F1;
-
-border-radius:14px;
-
-color:white;
-
-font-weight:600;
-
-transition:.3s;
-
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:15px 28px;
+    background:#1a2236;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;
+    color:white;
+    transition:.35s;
+    font-weight:600;
 }
 
 .contact-btn:hover{
+    transform:translateY(-5px);
+    background:#6366F1;
+}
 
-transform:translateY(-6px);
+.contact-btn.primary{
+    background:linear-gradient(135deg,#6366F1,#8B5CF6);
+    border:none;
+}
+
+.contact-btn.primary:hover{
+    box-shadow:0 15px 35px rgba(99,102,241,.35);
+}
+
+@media(max-width:900px){
+
+.contact-info{
+grid-template-columns:1fr;
+}
+
+.contact-wrapper{
+padding:40px 30px;
+}
+
+}
+
+@media(max-width:600px){
+
+.contact-buttons{
+flex-direction:column;
+}
+
+.contact-btn{
+justify-content:center;
+width:100%;
+}
+
+.contact-text{
+font-size:16px;
+}
 
 }

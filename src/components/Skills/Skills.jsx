@@ -1,52 +1,68 @@
 import "./Skills.css";
+import { motion } from "framer-motion";
 
-const skills=[
-"Figma",
-"UI Design",
-"UX Design",
-"Wireframing",
-"Prototype",
-"Design System",
-"Auto Layout",
-"React",
-"HTML",
-"CSS",
-"JavaScript",
-"Framer Motion"
+const skillCategories = [
+  {
+    title: "UI Design",
+    skills: ["Figma", "Auto Layout", "Design Systems", "Responsive Design"],
+  },
+  {
+    title: "UX Process",
+    skills: ["User Research", "Wireframing", "Prototyping", "User Flow"],
+  },
+  {
+    title: "Frontend",
+    skills: ["React", "HTML", "CSS", "JavaScript"],
+  },
+  {
+    title: "Tools",
+    skills: ["Framer Motion", "Git", "VS Code", "Photoshop","Three.js"],
+  },
 ];
 
-function Skills(){
+function Skills() {
+  return (
+    <section className="skills" id="skills">
+      <div className="container">
 
-return(
+        <motion.h2
+          className="section-title"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          Skills & Tools
+        </motion.h2>
 
-<section className="skills">
+        <p className="skills-text">
+          My design process combines creativity, research, and frontend
+          development to build intuitive digital experiences.
+        </p>
 
-<div className="container">
+        <div className="skills-grid">
+          {skillCategories.map((category, index) => (
+            <motion.div
+              className="skills-card"
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+            >
+              <h3>{category.title}</h3>
 
-<h2 className="section-title">
-Skills
-</h2>
+              <div className="skill-tags">
+                {category.skills.map((skill, i) => (
+                  <span key={i}>{skill}</span>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
 
-<div className="skill-grid">
-
-{skills.map((skill,index)=>(
-
-<div className="skill-card" key={index}>
-
-{skill}
-
-</div>
-
-))}
-
-</div>
-
-</div>
-
-</section>
-
-)
-
+      </div>
+    </section>
+  );
 }
 
 export default Skills;

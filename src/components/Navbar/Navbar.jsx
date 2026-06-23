@@ -5,14 +5,17 @@ function Navbar() {
     <nav className="navbar">
       <div className="container nav-container">
 
-        <h2 className="logo">Meet.</h2>
+        <a href="#home" className="logo">
+          Meet<span>.</span>
+        </a>
 
         <ul className="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Designs</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#designs">Designs</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
 
       </div>

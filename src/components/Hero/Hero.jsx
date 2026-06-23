@@ -3,47 +3,63 @@ import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <section className="hero" id="home">
+    <section id="home" className="hero">
       <div className="container hero-container">
 
         <motion.div
-          className="hero-left"
-          initial={{ opacity: 0, x: -80 }}
+          className="hero-content"
+          initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className="hero-subtitle">Hello, I'm</p>
+          <span className="hero-greeting">
+            👋 Hello, I'm
+          </span>
 
-          <h1 className="hero-title">
-            Meet Dhanani
+          <h1>
+            Meet <span>Savaj</span>
           </h1>
 
-          <h2 className="hero-role">
+          <h2>
             UI/UX Designer
           </h2>
 
-          <p className="hero-description">
-            I create modern, user-friendly, and visually engaging digital
-            experiences with a strong focus on usability, aesthetics, and
-            problem-solving.
+          <p>
+            Passionate about designing intuitive, visually appealing and
+            user-centered digital experiences. I transform ideas into
+            meaningful interfaces through research, creativity and modern
+            design principles.
           </p>
 
-          <a href="#designs" className="hero-btn">
-            View My Designs
-          </a>
+          <div className="hero-buttons">
+
+            <a href="#designs" className="primary-btn">
+              View My Designs
+            </a>
+
+            <a href="#contact" className="secondary-btn">
+              Contact Me
+            </a>
+
+          </div>
+
         </motion.div>
 
         <motion.div
-          className="hero-right"
-          initial={{ opacity: 0, x: 80 }}
+          className="hero-image-section"
+          initial={{ opacity: 0, x: 70 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
+
+          <div className="glow"></div>
+
           <img
-            src="/icons/profile.png"
-            alt="Meet Dhanani"
+            src="/images/profile.png"
+            alt="Meet Savaj"
             className="hero-image"
           />
+
         </motion.div>
 
       </div>

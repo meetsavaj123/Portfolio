@@ -4,21 +4,27 @@ import { motion } from "framer-motion";
 const designs = [
   {
     id: 1,
-    title: "Medical App UI",
-    category: "Mobile Design",
+    title: "Medical Appointment App",
+    category: "Mobile UI/UX",
     image: "/designs/design1.png",
+    description:
+      "A healthcare mobile application designed to simplify appointment booking, improve doctor-patient communication, and create a seamless medical experience.",
   },
   {
     id: 2,
-    title: "Food Delivery UI",
-    category: "Web Design",
+    title: "Food Delivery Platform",
+    category: "Web UI Design",
     image: "/designs/design2.png",
+    description:
+      "A modern food ordering platform focused on quick navigation, intuitive interactions, and an engaging user experience for online ordering.",
   },
   {
     id: 3,
-    title: "Learning App UI",
-    category: "UI/UX Design",
+    title: "Online Learning Platform",
+    category: "UX Case Study",
     image: "/designs/design3.png",
+    description:
+      "An educational platform that helps students discover courses, track progress, and learn through a clean and accessible interface.",
   },
 ];
 
@@ -50,11 +56,13 @@ function DesignGallery() {
               <img src={item.image} alt={item.title} />
 
               <div className="overlay">
-                <span>{item.category}</span>
+                <span className="design-category">{item.category}</span>
 
                 <h3>{item.title}</h3>
 
-                <button>View Design</button>
+                <p>{item.description}</p>
+
+                <button className="design-btn">View Case Study →</button>
               </div>
             </motion.div>
           ))}
