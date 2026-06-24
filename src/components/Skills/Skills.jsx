@@ -12,11 +12,11 @@ const skillCategories = [
   },
   {
     title: "Frontend",
-    skills: ["React", "HTML", "CSS", "JavaScript"],
+    skills: ["React", "HTML", "CSS", "JavaScript","Three.js"],
   },
   {
     title: "Tools",
-    skills: ["Framer Motion", "Git", "VS Code", "Photoshop","Three.js"],
+    skills: ["Framer Motion", "Git", "VS Code", "Canva"],
   },
 ];
 
