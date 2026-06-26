@@ -101,7 +101,7 @@ function Contact() {
               href="https://drive.google.com/file/d/1ICIjHNpNUOaqq5HUcHOcNYR_QNdBPXPk/view?usp=drivesdk"
               target="_blank"
               rel="noreferrer"
-              className="contact-btn primary"
+              className="contact-btn"
             >
               <FaDownload />
               Resume
