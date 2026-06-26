@@ -1,4 +1,4 @@
-import "./Experience.css";
+import "./Journey.css";
 import { motion } from "framer-motion";
 
 const journey = [
@@ -22,9 +22,9 @@ const journey = [
   }
 ];
 
-function Experience() {
+function Journey() {
   return (
-    <section className="experience" id="experience">
+    <section className="Journey" id="Journey">
       <div className="container">
 
         <motion.h2
@@ -68,4 +68,4 @@ function Experience() {
   );
 }
 
-export default Experience;
+export default Journey;
