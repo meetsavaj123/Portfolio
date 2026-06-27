@@ -1,7 +1,7 @@
 import "./styles/UserFlow.css";
 import { motion } from "framer-motion";
 
-function UserFlow({ project }) {
+function UserFlow() {
   return (
     <section className="case-section">
       <div className="container">
