@@ -32,15 +32,14 @@ const project = {
   problem:
     "Many project management tools overwhelm users with complex interfaces and crowded dashboards, making task management difficult and reducing team productivity.",
 
-  goal:
-    "Design a modern, easy-to-use dashboard that helps teams manage projects, monitor progress, collaborate effectively, and complete tasks with minimal effort.",
+  goal: "Design a modern, easy-to-use dashboard that helps teams manage projects, monitor progress, collaborate effectively, and complete tasks with minimal effort.",
 
   research: [
     "Users need a simple dashboard with clear navigation.",
     "Task status should be visible at a glance.",
     "Teams value collaboration and quick project updates.",
     "Responsive layouts improve usability across devices.",
-    "Minimal interfaces reduce cognitive load."
+    "Minimal interfaces reduce cognitive load.",
   ],
 
   userFlow: [
@@ -50,27 +49,19 @@ const project = {
     "Add Tasks",
     "Assign Team",
     "Track Progress",
-    "Complete Project"
+    "Complete Project",
   ],
 
   wireframe:
     "Low-fidelity wireframes were created to organize dashboard sections, simplify task management, and establish a clear information hierarchy before applying the final UI.",
 
-  colors: [
-    "#2563EB",
-    "#FFFFFF",
-    "#F5F7FA",
-    "#111827"
-  ],
+  colors: ["#2563EB", "#FFFFFF", "#F5F7FA", "#111827"],
 
-  typography: [
-    "Poppins",
-    "Inter"
-  ],
+  typography: ["Poppins", "Inter"],
 
   gallery: [
     "/case-studies/flowtask/home-screen.png",
-    "/case-studies/flowtask/booking-screen.png"
+    "/case-studies/flowtask/booking-screen.png",
   ],
 
   features: [
@@ -83,21 +74,21 @@ const project = {
     "Responsive layout",
     "Simple navigation",
     "Clean SaaS interface",
-    "Modern design system"
+    "Modern design system",
   ],
 
   challenges: [
     "Presenting large amounts of project data clearly.",
     "Designing dashboards that remain clean and uncluttered.",
     "Maintaining consistency across multiple pages.",
-    "Improving productivity through better UX."
+    "Improving productivity through better UX.",
   ],
 
   nextProject: {
     title: "Foodie - Food Delivery Mobile App",
     slug: "foodie",
-    image: "/designs/design1.png"
-  }
+    image: "/designs/design1.png",
+  },
 };
 
 function FlowTask() {

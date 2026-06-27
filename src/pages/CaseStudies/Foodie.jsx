@@ -103,6 +103,7 @@ const project = {
 function Foodie() {
   return (
     <>
+  
       <ProjectHero project={project} />
       <Overview project={project} />
       <Problem project={project} />
