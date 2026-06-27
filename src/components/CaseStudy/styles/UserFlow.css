@@ -1,20 +1,80 @@
+.case-section{
+    padding:100px 0;
+    background:#050816;
+}
+
+.case-title{
+    text-align:center;
+    font-size:42px;
+    font-weight:700;
+    color:#ffffff;
+    margin-bottom:50px;
+}
+
 .userflow-card{
+
     max-width:900px;
+
     margin:auto;
+
+    padding:45px;
+
+    border-radius:24px;
+
     background:#111827;
+
     border:1px solid rgba(255,255,255,.08);
-    border-radius:20px;
-    padding:35px;
+
     transition:.35s;
+
 }
 
 .userflow-card:hover{
+
+    transform:translateY(-8px);
+
     border-color:#6366F1;
-    transform:translateY(-5px);
+
+    box-shadow:0 20px 45px rgba(99,102,241,.18);
+
 }
 
 .userflow-card p{
+
     color:#CBD5E1;
-    font-size:17px;
-    line-height:1.9;
+
+    font-size:18px;
+
+    line-height:2;
+
+    text-align:center;
+
+}
+
+@media(max-width:768px){
+
+.case-section{
+
+    padding:80px 0;
+
+}
+
+.case-title{
+
+    font-size:34px;
+
+}
+
+.userflow-card{
+
+    padding:30px;
+
+}
+
+.userflow-card p{
+
+    font-size:16px;
+
+}
+
 }

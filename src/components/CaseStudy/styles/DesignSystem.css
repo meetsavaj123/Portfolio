@@ -1,76 +1,167 @@
+.case-section{
+    padding:100px 0;
+    background:#050816;
+}
+
+.case-title{
+    text-align:center;
+    font-size:42px;
+    color:#fff;
+    margin-bottom:60px;
+}
+
 .design-system-grid{
+
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:30px;
-    margin-top:50px;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
 }
 
 .design-card{
+
     background:#111827;
+
     border:1px solid rgba(255,255,255,.08);
-    border-radius:20px;
+
+    border-radius:24px;
+
     padding:35px;
+
     transition:.35s;
+
 }
 
 .design-card:hover{
-    transform:translateY(-5px);
+
+    transform:translateY(-8px);
+
     border-color:#6366F1;
+
+    box-shadow:0 20px 45px rgba(99,102,241,.18);
+
 }
 
 .design-card h3{
+
     color:#fff;
-    margin-bottom:25px;
+
+    margin-bottom:30px;
+
     font-size:24px;
+
 }
 
-.color-list{
-    display:flex;
-    flex-direction:column;
-    gap:18px;
+.color-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
 }
 
 .color-item{
+
     display:flex;
+
     align-items:center;
+
     gap:15px;
+
 }
 
 .color-circle{
-    width:40px;
-    height:40px;
+
+    width:55px;
+
+    height:55px;
+
     border-radius:50%;
-    border:2px solid rgba(255,255,255,.15);
+
+    border:3px solid rgba(255,255,255,.15);
+
 }
 
 .color-item span{
-    color:#CBD5E1;
-    font-size:16px;
-}
 
-.font-list{
-    display:flex;
-    flex-direction:column;
-    gap:18px;
+    color:#CBD5E1;
+
+    font-size:15px;
+
 }
 
 .font-item{
-    padding:14px 18px;
-    background:#1F2937;
-    border-radius:12px;
+
+    padding:18px;
+
+    margin-bottom:18px;
+
+    background:#0F172A;
+
+    border-radius:14px;
+
     color:#fff;
-    font-size:18px;
-    border:1px solid rgba(255,255,255,.05);
+
+    font-size:22px;
+
+    font-weight:600;
+
+    border:1px solid rgba(255,255,255,.06);
+
+}
+
+.font-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.design-system-grid{
+
+    grid-template-columns:1fr;
+
+}
+
 }
 
 @media(max-width:768px){
 
-.design-system-grid{
-    grid-template-columns:1fr;
+.case-section{
+
+    padding:80px 0;
+
+}
+
+.case-title{
+
+    font-size:34px;
+
 }
 
 .design-card{
-    padding:28px;
+
+    padding:25px;
+
+}
+
+.color-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.font-item{
+
+    font-size:18px;
+
 }
 
 }

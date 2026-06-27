@@ -94,8 +94,8 @@ const project = {
   ],
 
   nextProject: {
-    title: "ProManage - Project Management Platform",
-    slug: "promanage",
+    title: "FlowTask - Project Management Platform",
+    slug: "FlowTask",
     image: "/designs/design4.png"
   }
 };

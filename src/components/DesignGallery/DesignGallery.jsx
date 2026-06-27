@@ -33,12 +33,12 @@ const designs = [
   },
   {
     id: 4,
-    title: "ProManage - SaaS Landing Page",
+    title: "FlowTask - SaaS Landing Page",
     category: "SaaS Website UI/UX Design",
     image: "/designs/design4.png",
     description:
       "A modern SaaS landing page created to showcase a project management platform with a clean visual hierarchy and minimal interface. The design highlights key features, collaboration tools, and conversion-focused sections while maintaining a premium and professional appearance.",
-    link: "/case-study/promanage",
+    link: "/case-study/FlowTask",
   },
 ];
 

@@ -19,26 +19,31 @@ function Features({ project }) {
           className="features-description"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
           viewport={{ once: true }}
         >
-          The application was designed with user-centered features that
-          improve usability, accessibility, and overall user experience.
+          The application was designed with usability and simplicity in mind,
+          offering essential features that improve the overall user experience.
         </motion.p>
 
-        <motion.div
-          className="features-grid"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
+        <div className="features-grid">
           {project.features.map((feature, index) => (
-            <div className="feature-card" key={index}>
-              <span>{index + 1}</span>
-              <p>{feature}</p>
-            </div>
+            <motion.div
+              key={index}
+              className="feature-card"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.05 }}
+            >
+              <div className="feature-icon">
+                {String(index + 1).padStart(2, "0")}
+              </div>
+
+              <h3>{feature}</h3>
+            </motion.div>
           ))}
-        </motion.div>
+        </div>
 
       </div>
     </section>

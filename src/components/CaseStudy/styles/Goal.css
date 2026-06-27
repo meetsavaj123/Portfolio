@@ -1,15 +1,84 @@
-.goal-card{
-    max-width:900px;
-    margin:auto;
-    background:#111827;
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:20px;
-    padding:35px;
+.case-section{
+    padding:100px 0;
+    background:#050816;
+}
+
+.case-title{
     text-align:center;
+    font-size:42px;
+    font-weight:700;
+    color:#ffffff;
+    margin-bottom:50px;
+}
+
+.goal-card{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:45px;
+
+    border-radius:24px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(99,102,241,.15),
+        rgba(139,92,246,.12)
+    );
+
+    border:1px solid rgba(99,102,241,.25);
+
+    transition:.35s;
+
+}
+
+.goal-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(99,102,241,.20);
+
 }
 
 .goal-card p{
-    color:#cbd5e1;
+
+    color:#E2E8F0;
+
     font-size:18px;
-    line-height:1.9;
+
+    line-height:2;
+
+    text-align:center;
+
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:768px){
+
+.case-section{
+
+    padding:80px 0;
+
+}
+
+.case-title{
+
+    font-size:34px;
+
+}
+
+.goal-card{
+
+    padding:30px;
+
+}
+
+.goal-card p{
+
+    font-size:16px;
+
+}
+
 }

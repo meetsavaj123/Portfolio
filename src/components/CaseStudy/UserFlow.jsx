@@ -17,12 +17,17 @@ function UserFlow({ project }) {
 
         <motion.div
           className="userflow-card"
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
         >
-          <p>{project.userFlow}</p>
+          <p>
+            The user journey was designed to be simple and intuitive, allowing
+            users to move from discovering the application to completing their
+            primary task with minimal effort. Each screen focuses on reducing
+            friction while maintaining a clean and consistent experience.
+          </p>
         </motion.div>
 
       </div>

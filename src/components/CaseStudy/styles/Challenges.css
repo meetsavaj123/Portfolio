@@ -1,54 +1,145 @@
-.challenges-description{
-    max-width:850px;
-    margin:0 auto 50px;
-    text-align:center;
-    color:#CBD5E1;
-    line-height:1.8;
-    font-size:17px;
+.case-section{
+    padding:100px 0;
+    background:#050816;
 }
 
-.challenges-grid{
+.case-title{
+    text-align:center;
+    font-size:42px;
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.challenge-description{
+
+    max-width:760px;
+
+    margin:0 auto 60px;
+
+    text-align:center;
+
+    color:#B8C2D9;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
+.challenge-grid{
+
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+
 }
 
 .challenge-card{
+
     background:#111827;
+
     border:1px solid rgba(255,255,255,.08);
-    border-radius:20px;
+
+    border-radius:22px;
+
     padding:30px;
+
     transition:.35s;
+
 }
 
 .challenge-card:hover{
-    transform:translateY(-6px);
-    border-color:#EF4444;
+
+    transform:translateY(-8px);
+
+    border-color:#8B5CF6;
+
+    box-shadow:0 18px 40px rgba(139,92,246,.20);
+
 }
 
-.challenge-card span{
-    width:45px;
-    height:45px;
-    display:flex;
+.challenge-number{
+
+    display:inline-flex;
+
     align-items:center;
+
     justify-content:center;
+
+    width:52px;
+
+    height:52px;
+
     border-radius:50%;
-    background:#EF4444;
+
+    margin-bottom:22px;
+
+    background:linear-gradient(135deg,#8B5CF6,#6366F1);
+
     color:#fff;
+
+    font-size:18px;
+
     font-weight:700;
-    margin-bottom:18px;
+
 }
 
 .challenge-card p{
+
     color:#CBD5E1;
+
+    font-size:17px;
+
     line-height:1.8;
-    font-size:16px;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.challenge-grid{
+
+    grid-template-columns:1fr;
+
+}
+
 }
 
 @media(max-width:768px){
 
-.challenges-grid{
-    grid-template-columns:1fr;
+.case-section{
+
+    padding:80px 0;
+
+}
+
+.case-title{
+
+    font-size:34px;
+
+}
+
+.challenge-description{
+
+    font-size:16px;
+
+    margin-bottom:45px;
+
+}
+
+.challenge-card{
+
+    padding:24px;
+
+}
+
+.challenge-card p{
+
+    font-size:16px;
+
 }
 
 }

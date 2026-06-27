@@ -12,14 +12,14 @@ import Challenges from "../../components/CaseStudy/Challenges";
 import NextProject from "../../components/CaseStudy/NextProject";
 
 const project = {
-  title: "ProManage - Project Management Platform",
+  title: "FlowTask - Project Management Platform",
 
   category: "Web Dashboard UI/UX Design",
 
-  cover: "/case-studies/promanage/cover.png",
+  cover: "/case-studies/flowtask/cover.png",
 
   overview:
-    "ProManage is a modern SaaS project management platform designed to help teams organize projects, manage tasks, collaborate efficiently, and monitor progress through a clean dashboard experience.",
+    "FlowTask is a modern SaaS project management platform designed to help teams organize projects, manage tasks, collaborate efficiently, and monitor progress through a clean dashboard experience.",
 
   role: "UI/UX Designer",
 
@@ -69,8 +69,8 @@ const project = {
   ],
 
   gallery: [
-    "/case-studies/promanage/home-screen.png",
-    "/case-studies/promanage/booking-screen.png"
+    "/case-studies/flowtask/home-screen.png",
+    "/case-studies/flowtask/booking-screen.png"
   ],
 
   features: [
@@ -100,7 +100,7 @@ const project = {
   }
 };
 
-function ProManage() {
+function FlowTask() {
   return (
     <>
       <ProjectHero project={project} />
@@ -119,4 +119,4 @@ function ProManage() {
   );
 }
 
-export default ProManage;
+export default FlowTask;

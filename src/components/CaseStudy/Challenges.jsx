@@ -12,33 +12,39 @@ function Challenges({ project }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Challenges & Learnings
+          Challenges
         </motion.h2>
 
         <motion.p
-          className="challenges-description"
+          className="challenge-description"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Throughout this project, several design challenges were addressed
-          while improving usability, consistency, and overall user experience.
+          Every design project involves solving real usability and interface
+          challenges. These were the key areas addressed during the design
+          process.
         </motion.p>
 
-        <motion.div
-          className="challenges-grid"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          {project.challenges.map((challenge, index) => (
-            <div className="challenge-card" key={index}>
-              <span>{index + 1}</span>
-              <p>{challenge}</p>
-            </div>
+        <div className="challenge-grid">
+          {project.challenges.map((item, index) => (
+            <motion.div
+              key={index}
+              className="challenge-card"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.08 }}
+            >
+              <span className="challenge-number">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+
+              <p>{item}</p>
+            </motion.div>
           ))}
-        </motion.div>
+        </div>
 
       </div>
     </section>

@@ -12,23 +12,38 @@ function Research({ project }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          User Research
+          Research Insights
         </motion.h2>
 
-        <motion.div
-          className="research-grid"
+        <motion.p
+          className="research-description"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
+          transition={{ delay: .2 }}
           viewport={{ once: true }}
         >
+          Based on user needs and interface analysis, these were the key
+          insights that guided the design decisions.
+        </motion.p>
+
+        <div className="research-grid">
           {project.research.map((item, index) => (
-            <div className="research-card" key={index}>
-              <span>{index + 1}</span>
+            <motion.div
+              className="research-card"
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * .1 }}
+            >
+              <span className="research-number">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+
               <p>{item}</p>
-            </div>
+            </motion.div>
           ))}
-        </motion.div>
+        </div>
 
       </div>
     </section>

@@ -25,7 +25,7 @@ function DesignSystem({ project }) {
           >
             <h3>Color Palette</h3>
 
-            <div className="color-list">
+            <div className="color-grid">
               {project.colors.map((color, index) => (
                 <div key={index} className="color-item">
                   <div
@@ -37,7 +37,6 @@ function DesignSystem({ project }) {
                 </div>
               ))}
             </div>
-
           </motion.div>
 
           <motion.div
@@ -48,14 +47,11 @@ function DesignSystem({ project }) {
           >
             <h3>Typography</h3>
 
-            <div className="font-list">
-              {project.typography.map((font, index) => (
-                <div key={index} className="font-item">
-                  {font}
-                </div>
-              ))}
-            </div>
-
+            {project.typography.map((font, index) => (
+              <div className="font-item" key={index}>
+                {font}
+              </div>
+            ))}
           </motion.div>
 
         </div>

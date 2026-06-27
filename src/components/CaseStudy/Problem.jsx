@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Problem({ project }) {
   return (
-    <section className="case-section problem-section">
+    <section className="case-section">
       <div className="container">
 
         <motion.h2
@@ -12,13 +12,14 @@ function Problem({ project }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Problem Statement
+          The Problem
         </motion.h2>
 
         <motion.div
           className="problem-card"
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
           <p>{project.problem}</p>
