@@ -3,24 +3,25 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const designs = [
-  {
+    {
     id: 1,
-    title: "MediCare - Medical Appointment App",
-    category: "Mobile App UI/UX Design",
-    image: "/designs/design1.png",
-    description:
-      "A clean and user-friendly healthcare application that enables users to find doctors, book appointments, and manage consultations effortlessly. The design emphasizes accessibility, clarity, and a smooth appointment booking experience.",
-    link: "/case-study/medicare",
-  },
-  {
-    id: 2,
     title: "Foodie - Food Delivery Mobile App",
     category: "Mobile App UI/UX",
-    image: "/designs/design2.png",
+    image: "/designs/design1.png",
     description:
       "A modern food delivery application designed to simplify food discovery, ordering, and delivery tracking. The interface combines intuitive navigation, vibrant visuals, and a seamless user experience for quick and convenient meal ordering.",
     link: "/case-study/foodie",
   },
+  {
+    id: 2,
+    title: "MediCare - Medical Appointment App",
+    category: "Mobile App UI/UX Design",
+    image: "/designs/design2.png",
+    description:
+      "A clean and user-friendly healthcare application that enables users to find doctors, book appointments, and manage consultations effortlessly. The design emphasizes accessibility, clarity, and a smooth appointment booking experience.",
+    link: "/case-study/medicare",
+  },
+
   {
     id: 3,
     title: "Learnify - Online Learning Platform",
@@ -69,9 +70,7 @@ function DesignGallery() {
               <img src={item.image} alt={item.title} />
 
               <div className="overlay">
-                <span className="design-category">
-                  {item.category}
-                </span>
+                <span className="design-category">{item.category}</span>
 
                 <h3>{item.title}</h3>
 

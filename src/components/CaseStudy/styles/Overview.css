@@ -1,0 +1,22 @@
+.overview-description{
+    max-width:900px;
+    margin:0 auto 50px;
+    text-align:center;
+}
+
+.overview-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.case-card h4{
+    color:#8b5cf6;
+    margin-bottom:12px;
+    font-size:18px;
+}
+
+.case-card p{
+    color:#cbd5e1;
+    line-height:1.7;
+}
