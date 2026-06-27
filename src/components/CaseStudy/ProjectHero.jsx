@@ -4,8 +4,9 @@ import { motion } from "framer-motion";
 function ProjectHero({ project }) {
   return (
     <section className="project-hero">
-      <div className="container hero-grid">
+      <div className="hero-bg"></div>
 
+      <div className="container hero-grid">
         <motion.div
           className="hero-content"
           initial={{ opacity: 0, x: -40 }}
@@ -18,32 +19,17 @@ function ProjectHero({ project }) {
 
           <h1>{project.title}</h1>
 
-          <p>{project.overview}</p>
+          <p className="hero-subtitle">
+            A modern UI/UX case study focused on creating an intuitive,
+            visually appealing, and user-centered digital experience through
+            thoughtful design decisions and seamless interactions.
+          </p>
 
-          <div className="hero-info">
+          <div className="hero-line"></div>
 
-            <div>
-              <h4>Role</h4>
-              <span>{project.role}</span>
-            </div>
-
-            <div>
-              <h4>Duration</h4>
-              <span>{project.duration}</span>
-            </div>
-
-            <div>
-              <h4>Platform</h4>
-              <span>{project.platform}</span>
-            </div>
-
-            <div>
-              <h4>Tools</h4>
-              <span>{project.tools}</span>
-            </div>
-
+          <div className="hero-scroll">
+            ↓ Scroll to explore the complete case study
           </div>
-
         </motion.div>
 
         <motion.div
@@ -52,12 +38,8 @@ function ProjectHero({ project }) {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <img
-            src={project.cover}
-            alt={project.title}
-          />
+          <img src={project.cover} alt={project.title} />
         </motion.div>
-
       </div>
     </section>
   );
